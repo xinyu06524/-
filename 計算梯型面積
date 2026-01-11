@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	double area=(double)((a+b)*c)/2;
+	printf("Trapezoid area:%.1f", area);
+	return 0;
+}
