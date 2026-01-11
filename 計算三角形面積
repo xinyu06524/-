@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    double area=(double)(a*b)/2;
+    printf("Triangle area:%.1f", area);
+	return 0;
+}
