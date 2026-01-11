@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    char s[4];
+    scanf("%s", &s);
+    for(int j=3; j>=0; j--){
+        if(j!=0) printf("%c,", s[j]);
+        else printf("%c", s[j]);
+    }
+	return 0;
+}
