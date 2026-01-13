@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int h1, min1, h2, min2;
+    scanf("%d %d\n%d %d", &h1, &min1, &h2, &min2);
+    int total_min=(h2-h1)*60+(min2-min1);
+    int cost;
+    if(total_min<=120)cost=(total_min/30)*30;
+    else if(120<total_min&&total_min<=240)cost=120+((total_min-120)/30)*40;
+    else cost=280+((total_min-240)/30)*60;
+    printf("%d", cost);
+	return 0;
+}
