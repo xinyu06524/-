@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+    char s[5];
+    scanf("%s", &s);
+    if(strcmp(s, "dog")==0)printf("狗");
+    if(strcmp(s, "cat")==0)printf("貓");
+    if(strcmp(s, "duck")==0)printf("鴨");
+    if(strcmp(s, "cow")==0)printf("牛");
+    if(strcmp(s, "fox")==0)printf("狐");
+    if(strcmp(s, "狗")==0)printf("dog");
+    if(strcmp(s, "貓")==0)printf("cat");
+    if(strcmp(s, "鴨")==0)printf("duck");
+    if(strcmp(s, "牛")==0)printf("cow");
+    if(strcmp(s, "狐")==0)printf("fox");
+	return 0;
+}
