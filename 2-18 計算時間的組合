@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int s, min, hr, day;
+    scanf("%d", &s);
+    day=s/86400;
+    s-=86400*day;
+    hr=s/3600;
+    s-=3600*hr;
+    min=s/60;
+    s-=60*min;
+    printf("%d days\n%d hours\n%d minutes\n%d seconds", day, hr, min, s);
+	return 0;
+}
