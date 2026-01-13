@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int dis;
+    scanf("%d", &dis);
+    int s=dis/0.238+1;    //100-30*2.54=23.8
+    printf("%d", s);
+	return 0;
+}
