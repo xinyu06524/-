@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int n;
+    scanf("%d", &n);
+    double km=(double)n*1.6;
+    printf("km=%.1lf", km);
+	return 0;
+}
