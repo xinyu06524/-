@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int hr, money;
+    scanf("%d %d", &hr, &money);
+    double total;
+    if(hr<=60)total=hr*money;
+    else if(60<hr&&hr<=120)total=60*money+(hr-60)*money*1.33;
+    else total=60*money+60*money*1.33+(hr-120)*money*1.66;
+    printf("%.1lf", total);
+	return 0;
+}
