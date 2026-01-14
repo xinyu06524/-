@@ -4,8 +4,8 @@ int main(){
     int min;
     scanf("%d", &min);
     double cost=(double)min*0.9;
-    if(800<min&&min<1500)cost*=0.9;
-    else if(min>=1500)cost*=0.79;
+    if(800<min&&min<1500)cost*=0.9;		//800-1500min，9折
+    else if(min>=1500)cost*=0.79;		//1500min以上，79折
     printf("%.1lf", cost);
 	return 0;
 }
