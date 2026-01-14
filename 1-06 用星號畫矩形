@@ -1,3 +1,5 @@
+//輸出m(行)*n(列)的實心矩形
+
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
