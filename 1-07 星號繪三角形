@@ -1,3 +1,5 @@
+//1:空心三角形，2:實心三角形，3:實心倒三角形
+
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
