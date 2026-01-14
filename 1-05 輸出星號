@@ -1,3 +1,5 @@
+//根據讀取的五位數字，分五行輸出對應個數星號
+
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
