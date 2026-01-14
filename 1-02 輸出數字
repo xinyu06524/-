@@ -1,9 +1,11 @@
+//輸入一個四位數，將其分解輸出四個數字
+
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-	char num[10];
+	char num[4];
     scanf("%s", &num);
-    for(int i=0; i<10&&num[i]!=NULL; i++){
+    for(int i=0; i<4; i++){
         printf("%c\n", num[i]);
     }
 	return 0;
