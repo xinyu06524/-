@@ -7,7 +7,7 @@ int main(){
         double s;
         scanf("%lf", &s);
         double area=s*s;
-        area = floor(area * 10 + 0.5) / 10;
+		area = floor(area * 10 + 0.5) / 10;		//小數點後第一位大於5進位
         printf("%.1lf\n", area);
     }
 	return 0;
