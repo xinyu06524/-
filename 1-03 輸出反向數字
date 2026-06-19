@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main() {
-    char s[4];
-    scanf("%s", &s);
+    char s[5];
+    cin >> s;
     for(int j=3; j>=0; j--){
-        if(j!=0) printf("%c,", s[j]);
-        else printf("%c", s[j]);
+        if(j!=0) cout << s[j] << ",";
+        else cout << s[j];
     }
 	return 0;
 }
