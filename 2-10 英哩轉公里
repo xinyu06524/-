@@ -1,9 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     double km=(double)n*1.6;	//1mi=1.6km
-    printf("km=%.1lf", km);
+    cout << "km=" << fixed << setprecision(1) << km;
 	return 0;
 }
