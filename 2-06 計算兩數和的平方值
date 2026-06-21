@@ -1,13 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     while(n--){
         int a, b;
-        scanf("%d %d", &a, &b);
+        cin >> a >> b;
         int add=a+b;
-        printf("%d\n", add*add);
+        cout << add*add << endl;
     }
 	return 0;
 }
