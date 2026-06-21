@@ -1,12 +1,13 @@
 //1:空心三角形，2:實心三角形，3:實心倒三角形
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int num;
-    scanf("%d", &num);
-    if(num==1)printf("    *\n   * *\n  *   *\n *     *\n*********");
-    if(num==2)printf("    *\n   ***\n  *****\n *******\n*********");
-	if(num==3)printf("*********\n *******\n  *****\n   ***\n    *");
+    cin >> num;
+    if(num==1) cout << "    *\n   * *\n  *   *\n *     *\n*********";
+    if(num==2) cout << "    *\n   ***\n  *****\n *******\n*********";
+	if(num==3) cout << "*********\n *******\n  *****\n   ***\n    *";
     return 0;
 }
