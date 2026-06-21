@@ -1,11 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main(){
     int min;
-    scanf("%d", &min);
+    cin >> min;
     double cost=(double)min*0.9;
-    if(800<min&&min<1500)cost*=0.9;		//800-1500min，9折
-    else if(min>=1500)cost*=0.79;		//1500min以上，79折
-    printf("%.1lf", cost);
+    if(800<min&&min<1500) cost*=0.9;		//800-1500min，9折
+    else if(min>=1500) cost*=0.79;		//1500min以上，79折
+    cout << fixed << setprecision(1) << cost;
 	return 0;
 }
