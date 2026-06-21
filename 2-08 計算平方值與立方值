@@ -1,11 +1,13 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     while(n--){
         int m;
-        scanf("%d", &m);    
-        printf("%d %d %d\n", m, m*m, m*m*m);
+        cin >> m;    
+        cout << m << " " << m*m << " " << m*m*m <<endl;
     }
     return 0;
 }
