@@ -1,11 +1,12 @@
 //你步行速度1m/s，社友們在你前方dis公尺，步行速度30英吋/s，計算你需要幾秒鐘才能超越他們
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int dis;
-    scanf("%d", &dis);
+    cin >> dis;
     int s=dis/0.238+1;    //速度差100-30*2.54=23.8cm/s=0.238m/s
-    printf("%d", s);
+    cout << s;
 	return 0;
 }
