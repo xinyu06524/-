@@ -1,12 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int a, b;
-    scanf("%d %d", &a, &b);
-    printf("%d+%d=%d\n", a, b, a+b);
-    printf("%d*%d=%d\n", a, b, a*b);
-    printf("%d-%d=%d\n", a, b, a-b);
-    if(a<0)printf("%d/%d=%d...%d\n", a, b, a/b-1, a%b+b);	//-20/8=-3...4
-    else printf("%d/%d=%d...%d\n", a, b, a/b, a%b);
+    cin >> a >> b;
+    cout << a << "+" << b << "=" << a+b << endl;
+    cout << a << "*" << b << "=" << a*b << endl;
+    cout << a << "-" << b << "=" << a-b << endl;
+    if(a<0) cout << a << "/" << b << "=" << a/b-1 << "..." << a%b+b << endl;	//-20/8=-3...4
+    else cout << a << "/" << b << "=" << a/b << "..." << a%b << endl;
 	return 0;
 }
