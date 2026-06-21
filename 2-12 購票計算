@@ -1,14 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int total;
-    scanf("%d", &total);
+    cin >> total;
     int ten, five, one;
     ten=total/10;
     total-=ten*10;
     five=total/5;
     total-=five*5;
     one=total;
-    printf("NT10=%d\nNT5=%d\nNT1=%d", ten, five, one);
+    cout << "NT10=" << ten << "\nNT5=" << five << "\nNT1=" << one;
 	return 0;
 }
