@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     for(int i=0; i<8; i++){
         unsigned offset=7-i;
-        printf("%d", (n&(1<<offset))>>offset);		//位元運算
+        cout << ((n&(1<<offset))>>offset);		//位元運算
     }
 	return 0;
 }
