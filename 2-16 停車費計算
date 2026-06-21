@@ -1,13 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int h1, min1, h2, min2;
-    scanf("%d %d\n%d %d", &h1, &min1, &h2, &min2);
+    cin >> h1 >> min1 >> h2 >> min2;
     int total_min=(h2-h1)*60+(min2-min1);		//總分鐘數
     int cost;
-    if(total_min<=120)cost=(total_min/30)*30;	//前120分鐘每30分鐘30元
-    else if(120<total_min&&total_min<=240)cost=120+((total_min-120)/30)*40;		//第120-240分鐘每30分鐘40元
+    if(total_min<=120) cost=(total_min/30)*30;	//前120分鐘每30分鐘30元
+    else if(120<total_min&&total_min<=240) cost=120+((total_min-120)/30)*40;		//第120-240分鐘每30分鐘40元
     else cost=280+((total_min-240)/30)*60;		//240分鐘後每30分鐘60元
-    printf("%d", cost);
+    cout << cost;
 	return 0;
 }
