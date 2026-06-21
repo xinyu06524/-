@@ -1,14 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int s, min, hr, day;
-    scanf("%d", &s);
+    cin >> s;
     day=s/86400;
     s-=86400*day;
     hr=s/3600;
     s-=3600*hr;
     min=s/60;
     s-=60*min;
-    printf("%d days\n%d hours\n%d minutes\n%d seconds", day, hr, min, s);
+    cout << day << " days\n" << hr << " hours\n" << min << " minutes\n" << s << " seconds";
 	return 0;
 }
