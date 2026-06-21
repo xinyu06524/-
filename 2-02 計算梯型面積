@@ -1,9 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main(){
 	int a, b, c;
-	scanf("%d %d %d", &a, &b, &c);
+	cin >> a >> b >> c;
 	double area=(double)((a+b)*c)/2;
-	printf("Trapezoid area:%.1f", area);
+	cout << "Trapezoid area:" << fixed << setprecision(1) << area;
 	return 0;
 }
