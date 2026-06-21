@@ -1,14 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     while(n--){
         double s;
-        scanf("%lf", &s);
+        cin >> fixed >> setprecision(1) >> s;
         double area=s*s;
 		area = floor(area * 10 + 0.5) / 10;		//小數點後第一位大於5進位
-        printf("%.1lf\n", area);
+        cout << fixed << setprecision(1) << area << endl;
     }
 	return 0;
 }
