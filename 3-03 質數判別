@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int N;
+	cin >> N;
+	for(int i=2; i<=N; i++){
+		if(i==N) cout << "YES";
+		else if(N%i==0){
+			cout << "NO";
+			break;
+		}
+	}
+	return 0;
+}
