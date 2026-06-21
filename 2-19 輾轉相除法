@@ -1,14 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int a, b;
-    scanf("%d %d", &a, &b);
+    cin >> a >> b;
     while(a%b!=0){
         int r=a%b;
         a=b;
         b=r;
     }
-    printf("%d", b);
+    cout << b;
 	return 0;
 }
 
