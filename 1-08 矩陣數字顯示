@@ -1,17 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int num;
-    scanf("%d", &num);
-    if(num==0)printf("*****\n*   *\n*   *\n*   *\n*****");
-    if(num==1)printf("    *\n    *\n    *\n    *\n    *");
-    if(num==2)printf("*****\n    *\n*****\n*    \n*****");
-	if(num==3)printf("*****\n    *\n*****\n    *\n*****");
-    if(num==4)printf("*   *\n*   *\n*****\n    *\n    *");
-    if(num==5)printf("*****\n*    \n*****\n    *\n*****");
-    if(num==6)printf("*    \n*    \n*****\n*   *\n*****");
-    if(num==7)printf("*****\n    *\n    *\n    *\n    *");
-    if(num==8)printf("*****\n*   *\n*****\n*   *\n*****");
-    if(num==9)printf("*****\n*   *\n*****\n    *\n    *");
+    cin >> num;
+    if(num==0) cout << "*****\n*   *\n*   *\n*   *\n*****";
+    if(num==1) cout << "    *\n    *\n    *\n    *\n    *";
+    if(num==2) cout << "*****\n    *\n*****\n*    \n*****";
+	if(num==3) cout << "*****\n    *\n*****\n    *\n*****";
+    if(num==4) cout << "*   *\n*   *\n*****\n    *\n    *";
+    if(num==5) cout << "*****\n*    \n*****\n    *\n*****";
+    if(num==6) cout << "*    \n*    \n*****\n*   *\n*****";
+    if(num==7) cout << "*****\n    *\n    *\n    *\n    *";
+    if(num==8) cout << "*****\n*   *\n*****\n*   *\n*****";
+    if(num==9) cout << "*****\n*   *\n*****\n    *\n    *";
     return 0;
 }
