@@ -1,15 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     while(n--){
         int a, b;
-        scanf("%d %d", &a, &b);
+        cin >> a >> b;
         int total;
-        if(b>a)total=(a+b)*(b-a+1)/2;
+        if(b>a) total=(a+b)*(b-a+1)/2;
         else total=(a+b)*(a-b+1)/2;
-        printf("%d\n", total);
+        cout << total << endl;
     }
 	return 0;
 }
