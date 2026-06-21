@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 int main(){
 	int N;
-	scanf("%d", &N);
-	if(N<0)printf("負數");
-	else if(N>0)printf("正數");
-	else printf("0");
+	cin >> N;
+	if(N<0) cout << "負數";
+	else if(N>0) cout << "正數";
+	else cout << "0";
 	return 0;
 }
