@@ -1,10 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main(){
     int w, h_cm;
-    scanf("%d %d", &w, &h_cm);
+    cin >> w >> h_cm;
     float h_m=(float)h_cm/100;
     float BMI=w/(h_m*h_m);
-    printf("%.2f", BMI);
+    cout << fixed << setprecision(2) << BMI;
 	return 0;
 }
