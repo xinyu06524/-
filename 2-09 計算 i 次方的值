@@ -1,14 +1,16 @@
 //計算2的i次方
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
-    scanf("%d", &n);
+    cin >> n;
     while(n--){
         int i;
-        scanf("%d", &i);
-        if(i<=30)printf("%d\n", 1<<i);    //位移運算元
-        else printf("Value of more than 31\n");
+        cin >> i;
+        if(i<=30) cout << (1<<i) << endl;    //位移運算元
+        else cout << "Value of more than 31\n";
     }
     return 0;
 }
